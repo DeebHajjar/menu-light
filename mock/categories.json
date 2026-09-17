@@ -22,7 +22,7 @@
     "slug": "drinks",
     "name": "Drinks",
     "description": "A selection of refreshing beverages to complement your meal.",
-    "image": "assets/images/categories/drinks.svg",
+    "image": "assets/images/categories/drinks.png",
     "order": 3,
     "dish_count": 4
   }

@@ -11,7 +11,7 @@
       "Batata"
     ],
     "price": "3.00",
-    "image": "assets/images/dishes/shawarma.svg",
+    "image": "assets/images/dishes/shawarma.jpg",
     "category": "sandwiches",
     "is_available": true,
     "order": 1
@@ -22,7 +22,7 @@
     "name": "Tawook",
     "description": "Grilled chicken with a blend of Middle Eastern spices and a side of hummus.",
     "price": "22.00",
-    "image": "assets/images/dishes/tawook.svg",
+    "image": "assets/images/dishes/tawook.jpg",
     "category": "sandwiches",
     "tags": [],
     "is_available": true,
@@ -36,7 +36,7 @@
     "ingredients": [
     ],
     "price": "19.00",
-    "image": "assets/images/dishes/hummus.svg",
+    "image": "assets/images/dishes/hummus.jpg",
     "category": "plates",
     "tags": [
       "vegetarian",
@@ -50,7 +50,7 @@
     "slug": "pepsi",
     "name": "Pepsi",
     "price": "16.00",
-    "image": "assets/images/dishes/pepsi.svg",
+    "image": "assets/images/dishes/pepsi.jpg",
     "tags": [
       "soft_drink"
     ],
@@ -68,7 +68,7 @@
       "Ginger"
     ],
     "price": "28.00",
-    "image": "assets/images/dishes/mangao-juice.svg",
+    "image": "assets/images/dishes/mangao-juice.jpg",
     "category": "drinks",
     "tags": [
       "Juice",
