@@ -1,0 +1,37 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3rem;
+  padding: 0.7rem 1.6rem;
+  border: 1px solid transparent;
+  border-radius: var(--radius-s);
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  line-height: 1.2;
+  text-decoration: none;
+  transition:
+    background-color var(--duration-fast) ease,
+    border-color var(--duration-fast) ease,
+    color var(--duration-fast) ease;
+}
+
+.button--solid {
+  background: var(--ink);
+  color: var(--white);
+}
+
+.button--solid:hover {
+  background: var(--color-accent);
+}
+
+.button--outline {
+  border-color: var(--color-line-strong);
+  color: var(--color-text);
+}
+
+.button--outline:hover {
+  border-color: var(--color-text);
+}

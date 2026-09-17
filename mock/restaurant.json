@@ -1,0 +1,35 @@
+{
+  "name": "Aster",
+  "tagline": "Seasonal cooking, served with care",
+  "description": "A quiet dining room built around the day's best produce. Order from the menu, or let the kitchen cook for you.",
+  "logo": "assets/images/logo.svg",
+  "hero_image": "assets/images/hero.svg",
+  "currency": "USD",
+  "address": "14 Linden Square, Old Town",
+  "phone": "+1 (555) 010-0142",
+  "email": "reservations@aster.example",
+  "opening_hours": [
+    {
+      "days": "Wednesday to Saturday",
+      "hours": "18:30 – 23:00"
+    },
+    {
+      "days": "Sunday lunch",
+      "hours": "12:00 – 15:30"
+    },
+    {
+      "days": "Monday and Tuesday",
+      "hours": "Closed"
+    }
+  ],
+  "social_links": [
+    {
+      "label": "Instagram",
+      "url": "https://instagram.com/"
+    },
+    {
+      "label": "Reservations",
+      "url": "https://example.com/reserve"
+    }
+  ]
+}

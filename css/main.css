@@ -1,0 +1,19 @@
+/*
+ * Stylesheet entry point. Order matters: tokens → base → components → utilities.
+ * For production, bundle these into one file (see README.md).
+ */
+@import url("base/tokens.css");
+@import url("base/reset.css");
+@import url("base/typography.css");
+
+@import url("components/button.css");
+@import url("components/media.css");
+@import url("components/hero.css");
+@import url("components/menu.css");
+@import url("components/gallery.css");
+@import url("components/dishes.css");
+@import url("components/drawer.css");
+@import url("components/feedback.css");
+@import url("components/footer.css");
+
+@import url("utilities.css");

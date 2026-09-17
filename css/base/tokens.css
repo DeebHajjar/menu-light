@@ -1,0 +1,72 @@
+/*
+ * Design tokens: a light interface throughout.
+ * Porcelain page, white mats, ink text, and a Bordeaux accent kept for
+ * prices, the current category and small details.
+ */
+:root {
+  color-scheme: light;
+
+  /* Palette */
+  --porcelain: #f5f6f4;
+  --white: #ffffff;
+  --stone: #e9ebe8;
+  --ink: #1d2433;
+  --pewter: #5d6471;
+  --bordeaux: #8a2f3f;
+  --bordeaux-deep: #6c2230;
+
+  /* Roles */
+  --color-bg: var(--porcelain);
+  --color-surface: var(--white);
+  --color-surface-alt: var(--stone);
+  --color-text: var(--ink);
+  --color-text-muted: var(--pewter);
+  --color-accent: var(--bordeaux);
+  --color-accent-strong: var(--bordeaux-deep);
+  --color-line: rgb(29 36 51 / 0.14);
+  --color-line-strong: rgb(29 36 51 / 0.32);
+  --color-skeleton: rgb(29 36 51 / 0.07);
+  --color-skeleton-shine: rgb(255 255 255 / 0.7);
+  --color-backdrop: rgb(29 36 51 / 0.38);
+  --color-focus: var(--bordeaux);
+
+  --shadow-print: 0 1px 2px rgb(29 36 51 / 0.06), 0 12px 28px -18px rgb(29 36 51 / 0.35);
+  --shadow-print-raised: 0 2px 4px rgb(29 36 51 / 0.06), 0 22px 40px -20px rgb(29 36 51 / 0.42);
+  --shadow-card: 0 30px 70px -30px rgb(29 36 51 / 0.45);
+
+  /* Typography */
+  --font-display: "Bodoni Moda", "Didot", "Bodoni 72", "Libre Bodoni", "Times New Roman", serif;
+  --font-body: "Jost", "Futura", "Century Gothic", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+
+  --step--1: 0.8125rem;
+  --step-0: 1rem;
+  --step-1: 1.1875rem;
+  --step-2: clamp(1.35rem, 1.2rem + 0.4vw, 1.5rem);
+  --step-3: clamp(1.75rem, 1.4rem + 1.1vw, 2.25rem);
+  --step-4: clamp(2.5rem, 1.6rem + 3vw, 4.25rem);
+  --step-hero: clamp(4.25rem, 2rem + 9vw, 8.5rem);
+
+  /* Spacing */
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-s: 0.75rem;
+  --space-m: 1.25rem;
+  --space-l: 2rem;
+  --space-xl: 3rem;
+  --space-2xl: 4.5rem;
+  --space-3xl: clamp(4.5rem, 3rem + 6vw, 8.5rem);
+  --gutter: clamp(1.25rem, 0.5rem + 3vw, 3.5rem);
+  --content-max: 80rem;
+  --mat: clamp(8px, 1.2vw, 14px);
+
+  /* Shape */
+  --radius-s: 2px;
+  --radius-m: 6px;
+  --radius-sheet: 18px;
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --duration-fast: 160ms;
+  --duration-base: 320ms;
+  --duration-slow: 1s;
+}

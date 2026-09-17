@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Menu</title>
+  <meta name="description" content="Browse our menu.">
+  <meta name="theme-color" content="#f5f6f4">
+  <meta name="color-scheme" content="light">
+
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..600;1,6..96,400..500&family=Jost:wght@400;500&display=swap">
+
+  <link rel="stylesheet" href="css/main.css">
+
+  <!--
+    Optional deploy-time overrides (see README.md):
+    <script>
+      window.MENU_CONFIG = { api: { baseUrl: 'https://api.example.com/api/v1' }, mock: { enabled: false } };
+    </script>
+  -->
+  <script type="module" src="js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#menu">Skip to the menu</a>
+
+  <!-- 1. Hero: background image with the restaurant's card laid over it -->
+  <header class="hero" id="top" data-hero aria-busy="true">
+    <div class="hero__backdrop" data-hero-media></div>
+
+    <div class="hero__card">
+      <div class="hero__logo" data-hero-logo></div>
+      <h1 class="hero__name" data-hero-name></h1>
+      <p class="hero__tagline" data-hero-tagline></p>
+      <p class="hero__description" data-hero-description></p>
+      <a class="button button--solid hero__cta" href="#menu">Browse the menu</a>
+      <p class="hero__hours" data-hero-hours></p>
+    </div>
+  </header>
+
+  <!-- 2. Menu: categories first, then the dishes of the chosen category -->
+  <main class="menu" id="menu" data-menu data-view="categories" tabindex="-1">
+    <div class="menu__inner">
+      <header class="menu__header" data-menu-header>
+        <h2 class="menu__title">Menu</h2>
+        <p class="menu__lede">Choose a category to see its dishes.</p>
+      </header>
+
+      <div class="menu__body">
+        <nav class="menu-nav" data-menu-nav aria-label="Menu categories" hidden></nav>
+        <div class="menu__view" data-menu-view></div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer" data-footer hidden></footer>
+
+  <dialog class="dish-drawer" data-dish-dialog aria-labelledby="dish-drawer-title"></dialog>
+
+  <div class="visually-hidden" role="status" aria-live="polite" data-status></div>
+
+  <noscript>
+    <p class="noscript">This menu needs JavaScript. Turn it on in your browser settings to see the dishes.</p>
+  </noscript>
+</body>
+</html>

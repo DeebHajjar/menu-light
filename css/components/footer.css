@@ -1,0 +1,104 @@
+.site-footer {
+  padding: var(--space-2xl) var(--gutter) var(--space-l);
+  background: var(--color-surface-alt);
+  color: var(--color-text);
+}
+
+.site-footer a {
+  text-decoration-color: var(--color-line-strong);
+}
+
+.site-footer a:hover {
+  color: var(--color-accent);
+  text-decoration-color: currentColor;
+}
+
+.site-footer__inner {
+  display: grid;
+  gap: var(--space-xl);
+  width: min(100%, var(--content-max));
+  margin-inline: auto;
+}
+
+@media (min-width: 48rem) {
+  .site-footer__inner {
+    grid-template-columns: 1.4fr 1fr 1.2fr;
+    align-items: start;
+  }
+}
+
+.site-footer__brand {
+  display: grid;
+  justify-items: start;
+  gap: var(--space-2xs);
+}
+
+.site-footer__logo {
+  width: 2.75rem;
+  height: auto;
+  margin-block-end: var(--space-s);
+}
+
+.site-footer__name {
+  font-family: var(--font-display);
+  font-size: var(--step-4);
+  font-style: italic;
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+}
+
+.site-footer__tagline {
+  color: var(--color-text-muted);
+}
+
+.site-footer__heading {
+  margin-block-end: var(--space-s);
+  padding-block-end: var(--space-xs);
+  border-block-end: 1px solid var(--color-line);
+  font-size: var(--step-2);
+  font-style: italic;
+}
+
+.site-footer__address {
+  display: grid;
+  gap: var(--space-2xs);
+  font-style: normal;
+}
+
+.hours {
+  display: grid;
+  gap: var(--space-2xs);
+}
+
+.hours__row {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-m);
+}
+
+.hours dt {
+  color: var(--color-text-muted);
+}
+
+.hours dd {
+  white-space: nowrap;
+}
+
+.site-footer__bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--space-s) var(--space-l);
+  width: min(100%, var(--content-max));
+  margin: var(--space-2xl) auto 0;
+  padding-block-start: var(--space-m);
+  border-block-start: 1px solid var(--color-line);
+  font-size: var(--step--1);
+  color: var(--color-text-muted);
+}
+
+.site-footer__social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-m);
+}

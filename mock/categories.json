@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "slug": "starters",
+    "name": "Starters",
+    "description": "Light, bright plates to open the meal.",
+    "image": "assets/images/categories/starters.svg",
+    "order": 1,
+    "dish_count": 5
+  },
+  {
+    "id": 2,
+    "slug": "pasta-risotto",
+    "name": "Pasta & risotto",
+    "description": "Fresh pasta rolled each morning and risotto made to order.",
+    "image": "assets/images/categories/pasta-risotto.svg",
+    "order": 2,
+    "dish_count": 4
+  },
+  {
+    "id": 3,
+    "slug": "fish",
+    "name": "Fish",
+    "description": "Day-boat fish, cooked simply and sauced with restraint.",
+    "image": "assets/images/categories/fish.svg",
+    "order": 3,
+    "dish_count": 4
+  },
+  {
+    "id": 4,
+    "slug": "meat",
+    "name": "Meat",
+    "description": "Aged cuts and slow roasts from farms we know by name.",
+    "image": "assets/images/categories/meat.svg",
+    "order": 4,
+    "dish_count": 4
+  },
+  {
+    "id": 5,
+    "slug": "desserts",
+    "name": "Desserts",
+    "description": "Pastry, fruit and a cheese course to finish.",
+    "image": "assets/images/categories/desserts.svg",
+    "order": 5,
+    "dish_count": 4
+  },
+  {
+    "id": 6,
+    "slug": "drinks",
+    "name": "Wine & cocktails",
+    "description": "A short list of classics and pours chosen by our sommelier.",
+    "image": "assets/images/categories/drinks.svg",
+    "order": 6,
+    "dish_count": 5
+  }
+]

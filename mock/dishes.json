@@ -1,0 +1,515 @@
+[
+  {
+    "id": 1,
+    "slug": "scallops",
+    "name": "Hand-dived scallops",
+    "description": "Seared scallops on cauliflower purée with brown butter, capers and golden raisins.",
+    "ingredients": [
+      "Scallops",
+      "Cauliflower",
+      "Brown butter",
+      "Capers",
+      "Golden raisins"
+    ],
+    "price": "24.00",
+    "image": "assets/images/dishes/scallops.svg",
+    "category": "starters",
+    "tags": [
+      "gluten_free"
+    ],
+    "is_available": true,
+    "order": 1
+  },
+  {
+    "id": 2,
+    "slug": "beef-tartare",
+    "name": "Beef tartare",
+    "description": "Hand-cut aged beef with a cured egg yolk and rye crisps.",
+    "ingredients": [
+      "Aged beef",
+      "Cured egg yolk",
+      "Shallot",
+      "Cornichon",
+      "Rye crisp"
+    ],
+    "price": "22.00",
+    "image": "assets/images/dishes/beef-tartare.svg",
+    "category": "starters",
+    "tags": [],
+    "is_available": true,
+    "order": 2
+  },
+  {
+    "id": 3,
+    "slug": "burrata",
+    "name": "Burrata with heirloom tomatoes",
+    "description": "Creamy burrata over late-summer tomatoes with basil oil.",
+    "ingredients": [
+      "Burrata",
+      "Heirloom tomatoes",
+      "Basil oil",
+      "Aged balsamic",
+      "Sea salt"
+    ],
+    "price": "19.00",
+    "image": "assets/images/dishes/burrata.svg",
+    "category": "starters",
+    "tags": [
+      "vegetarian",
+      "gluten_free"
+    ],
+    "is_available": true,
+    "order": 3
+  },
+  {
+    "id": 4,
+    "slug": "pea-veloute",
+    "name": "Chilled pea velouté",
+    "description": "Sweet garden peas blended smooth, finished with mint and lemon oil.",
+    "ingredients": [
+      "Garden peas",
+      "Mint",
+      "Crème fraîche",
+      "Lemon oil"
+    ],
+    "price": "16.00",
+    "image": "assets/images/dishes/pea-veloute.svg",
+    "category": "starters",
+    "tags": [
+      "vegetarian",
+      "gluten_free"
+    ],
+    "is_available": true,
+    "order": 4
+  },
+  {
+    "id": 5,
+    "slug": "oysters",
+    "name": "Oysters, half dozen",
+    "description": "Six oysters on ice with shallot mignonette.",
+    "ingredients": [
+      "Oysters",
+      "Shallot mignonette",
+      "Lemon"
+    ],
+    "price": "28.00",
+    "image": "assets/images/dishes/oysters.svg",
+    "category": "starters",
+    "tags": [
+      "gluten_free"
+    ],
+    "is_available": false,
+    "order": 5
+  },
+  {
+    "id": 6,
+    "slug": "black-truffle-tagliolini",
+    "name": "Black truffle tagliolini",
+    "description": "Egg tagliolini tossed in butter and parmesan, with black truffle shaved at the table.",
+    "ingredients": [
+      "Egg tagliolini",
+      "Black truffle",
+      "Parmesan",
+      "Butter"
+    ],
+    "price": "38.00",
+    "image": "assets/images/dishes/black-truffle-tagliolini.svg",
+    "category": "pasta-risotto",
+    "tags": [
+      "vegetarian",
+      "signature"
+    ],
+    "is_available": true,
+    "order": 6
+  },
+  {
+    "id": 7,
+    "slug": "wild-mushroom-risotto",
+    "name": "Wild mushroom risotto",
+    "description": "Carnaroli rice with porcini and chanterelles.",
+    "ingredients": [
+      "Carnaroli rice",
+      "Porcini",
+      "Chanterelles",
+      "Thyme",
+      "Parmesan"
+    ],
+    "price": "29.00",
+    "image": "assets/images/dishes/wild-mushroom-risotto.svg",
+    "category": "pasta-risotto",
+    "tags": [
+      "vegetarian",
+      "gluten_free"
+    ],
+    "is_available": true,
+    "order": 7
+  },
+  {
+    "id": 8,
+    "slug": "lobster-ravioli",
+    "name": "Lobster ravioli",
+    "description": "Ravioli filled with lobster and ricotta, in a rich shellfish bisque.",
+    "ingredients": [
+      "Lobster",
+      "Ricotta",
+      "Shellfish bisque",
+      "Chives"
+    ],
+    "price": "36.00",
+    "image": "assets/images/dishes/lobster-ravioli.svg",
+    "category": "pasta-risotto",
+    "tags": [],
+    "is_available": true,
+    "order": 8
+  },
+  {
+    "id": 9,
+    "slug": "saffron-risotto",
+    "name": "Saffron risotto",
+    "description": "Risotto alla milanese with roasted bone marrow.",
+    "ingredients": [
+      "Carnaroli rice",
+      "Saffron",
+      "Bone marrow",
+      "Parmesan"
+    ],
+    "price": "27.00",
+    "image": "assets/images/dishes/saffron-risotto.svg",
+    "category": "pasta-risotto",
+    "tags": [
+      "gluten_free"
+    ],
+    "is_available": true,
+    "order": 9
+  },
+  {
+    "id": 10,
+    "slug": "roasted-turbot",
+    "name": "Roasted turbot",
+    "description": "Turbot on the bone with a champagne beurre blanc and a spoon of caviar.",
+    "ingredients": [
+      "Turbot",
+      "Champagne beurre blanc",
+      "Baby leeks",
+      "Caviar"
+    ],
+    "price": "52.00",
+    "image": "assets/images/dishes/roasted-turbot.svg",
+    "category": "fish",
+    "tags": [
+      "signature",
+      "gluten_free"
+    ],
+    "is_available": true,
+    "order": 10
+  },
+  {
+    "id": 11,
+    "slug": "sea-bass",
+    "name": "Seared sea bass",
+    "description": "Crisp-skinned sea bass with shaved fennel and blood orange.",
+    "ingredients": [
+      "Sea bass",
+      "Fennel",
+      "Blood orange",
+      "Saffron aioli"
+    ],
+    "price": "39.00",
+    "image": "assets/images/dishes/sea-bass.svg",
+    "category": "fish",
+    "tags": [
+      "gluten_free"
+    ],
+    "is_available": true,
+    "order": 11
+  },
+  {
+    "id": 12,
+    "slug": "miso-cod",
+    "name": "Miso-glazed black cod",
+    "description": "Black cod marinated for two days in sweet white miso.",
+    "ingredients": [
+      "Black cod",
+      "White miso",
+      "Bok choy",
+      "Sesame"
+    ],
+    "price": "44.00",
+    "image": "assets/images/dishes/miso-cod.svg",
+    "category": "fish",
+    "tags": [
+      "new"
+    ],
+    "is_available": true,
+    "order": 12
+  },
+  {
+    "id": 13,
+    "slug": "halibut",
+    "name": "Halibut with spring vegetables",
+    "description": "Poached halibut with asparagus, morels and a vin jaune sauce.",
+    "ingredients": [
+      "Halibut",
+      "Asparagus",
+      "Morels",
+      "Vin jaune sauce"
+    ],
+    "price": "46.00",
+    "image": "assets/images/dishes/halibut.svg",
+    "category": "fish",
+    "tags": [
+      "gluten_free"
+    ],
+    "is_available": true,
+    "order": 13
+  },
+  {
+    "id": 14,
+    "slug": "duck-breast",
+    "name": "Duck breast with cherries",
+    "description": "Roasted duck breast with cherries, beetroot and its own jus.",
+    "ingredients": [
+      "Duck breast",
+      "Cherries",
+      "Beetroot",
+      "Duck jus"
+    ],
+    "price": "42.00",
+    "image": "assets/images/dishes/duck-breast.svg",
+    "category": "meat",
+    "tags": [
+      "gluten_free"
+    ],
+    "is_available": true,
+    "order": 14
+  },
+  {
+    "id": 15,
+    "slug": "wagyu-striploin",
+    "name": "Wagyu striploin",
+    "description": "Grilled wagyu with smoked potato purée and bone marrow jus.",
+    "ingredients": [
+      "Wagyu striploin",
+      "Smoked potato purée",
+      "Bone marrow jus",
+      "Watercress"
+    ],
+    "price": "78.00",
+    "image": "assets/images/dishes/wagyu-striploin.svg",
+    "category": "meat",
+    "tags": [
+      "signature"
+    ],
+    "is_available": true,
+    "order": 15
+  },
+  {
+    "id": 16,
+    "slug": "lamb-loin",
+    "name": "Lamb loin",
+    "description": "Pink lamb loin with pea purée, mint and an anchovy crumb.",
+    "ingredients": [
+      "Lamb loin",
+      "Pea purée",
+      "Mint",
+      "Anchovy crumb"
+    ],
+    "price": "46.00",
+    "image": "assets/images/dishes/lamb-loin.svg",
+    "category": "meat",
+    "tags": [],
+    "is_available": true,
+    "order": 16
+  },
+  {
+    "id": 17,
+    "slug": "roast-chicken",
+    "name": "Roast chicken for two",
+    "description": "A whole free-range chicken, carved at the table, with morels and potato gratin.",
+    "ingredients": [
+      "Free-range chicken",
+      "Morels",
+      "Vin jaune",
+      "Potato gratin"
+    ],
+    "price": "68.00",
+    "image": "assets/images/dishes/roast-chicken.svg",
+    "category": "meat",
+    "tags": [],
+    "is_available": true,
+    "order": 17
+  },
+  {
+    "id": 18,
+    "slug": "chocolate-souffle",
+    "name": "Dark chocolate soufflé",
+    "description": "Baked to order; allow fifteen minutes.",
+    "ingredients": [
+      "Dark chocolate",
+      "Vanilla ice cream",
+      "Cocoa nib"
+    ],
+    "price": "16.00",
+    "image": "assets/images/dishes/chocolate-souffle.svg",
+    "category": "desserts",
+    "tags": [
+      "vegetarian",
+      "signature"
+    ],
+    "is_available": true,
+    "order": 18
+  },
+  {
+    "id": 19,
+    "slug": "lemon-tart",
+    "name": "Lemon tart",
+    "description": "Sharp lemon curd in a thin sablé shell with torched meringue.",
+    "ingredients": [
+      "Lemon curd",
+      "Sablé pastry",
+      "Italian meringue"
+    ],
+    "price": "14.00",
+    "image": "assets/images/dishes/lemon-tart.svg",
+    "category": "desserts",
+    "tags": [
+      "vegetarian"
+    ],
+    "is_available": true,
+    "order": 19
+  },
+  {
+    "id": 20,
+    "slug": "strawberries-cream",
+    "name": "Strawberries & cream",
+    "description": "Early strawberries with vanilla chantilly, basil and crisp meringue.",
+    "ingredients": [
+      "Strawberries",
+      "Vanilla chantilly",
+      "Basil",
+      "Meringue"
+    ],
+    "price": "14.00",
+    "image": "assets/images/dishes/strawberries-cream.svg",
+    "category": "desserts",
+    "tags": [
+      "vegetarian",
+      "gluten_free"
+    ],
+    "is_available": true,
+    "order": 20
+  },
+  {
+    "id": 21,
+    "slug": "cheese-selection",
+    "name": "Cheese selection",
+    "description": "Five cheeses from the trolley with quince paste and walnut bread.",
+    "ingredients": [
+      "Five cheeses",
+      "Quince paste",
+      "Walnut bread",
+      "Honey"
+    ],
+    "price": "22.00",
+    "image": "assets/images/dishes/cheese-selection.svg",
+    "category": "desserts",
+    "tags": [
+      "vegetarian"
+    ],
+    "is_available": true,
+    "order": 21
+  },
+  {
+    "id": 22,
+    "slug": "champagne",
+    "name": "Champagne by the glass",
+    "description": "Our house Brut, poured from a freshly opened bottle.",
+    "ingredients": [
+      "Chardonnay",
+      "Pinot Noir",
+      "Pinot Meunier"
+    ],
+    "price": "24.00",
+    "image": "assets/images/dishes/champagne.svg",
+    "category": "drinks",
+    "tags": [],
+    "is_available": true,
+    "order": 22
+  },
+  {
+    "id": 23,
+    "slug": "aster-negroni",
+    "name": "Aster negroni",
+    "description": "Our negroni, stirred over a single large ice cube.",
+    "ingredients": [
+      "Gin",
+      "Sweet vermouth",
+      "Bitter aperitivo",
+      "Orange peel"
+    ],
+    "price": "18.00",
+    "image": "assets/images/dishes/aster-negroni.svg",
+    "category": "drinks",
+    "tags": [
+      "signature"
+    ],
+    "is_available": true,
+    "order": 23
+  },
+  {
+    "id": 24,
+    "slug": "garden-spritz",
+    "name": "Garden spritz",
+    "description": "A long, bright drink with no alcohol.",
+    "ingredients": [
+      "Elderflower",
+      "Cucumber",
+      "Mint",
+      "Soda"
+    ],
+    "price": "12.00",
+    "image": "assets/images/dishes/garden-spritz.svg",
+    "category": "drinks",
+    "tags": [
+      "vegan",
+      "alcohol_free"
+    ],
+    "is_available": true,
+    "order": 24
+  },
+  {
+    "id": 25,
+    "slug": "espresso-martini",
+    "name": "Espresso martini",
+    "description": "Fresh espresso shaken hard with vodka and coffee liqueur.",
+    "ingredients": [
+      "Vodka",
+      "Espresso",
+      "Coffee liqueur",
+      "Vanilla"
+    ],
+    "price": "17.00",
+    "image": "assets/images/dishes/espresso-martini.svg",
+    "category": "drinks",
+    "tags": [],
+    "is_available": true,
+    "order": 25
+  },
+  {
+    "id": 26,
+    "slug": "pinot-noir",
+    "name": "Pinot noir by the glass",
+    "description": "A light, silky red; ask the sommelier about this week's bottle.",
+    "ingredients": [
+      "Pinot Noir"
+    ],
+    "price": "19.00",
+    "image": "assets/images/dishes/pinot-noir.svg",
+    "category": "drinks",
+    "tags": [
+      "vegan"
+    ],
+    "is_available": true,
+    "order": 26
+  }
+]

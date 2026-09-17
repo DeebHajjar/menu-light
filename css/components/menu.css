@@ -1,0 +1,179 @@
+/* Menu section, and the category contents (side column / sticky bar) */
+.menu {
+  position: relative;
+  z-index: 1; /* paints over the hero card's shadow */
+  padding-block: var(--space-3xl);
+  background: var(--color-bg);
+}
+
+.menu[data-view="category"] {
+  padding-block-start: var(--space-l);
+}
+
+.menu:focus {
+  outline: none;
+}
+
+.menu__inner {
+  width: min(100% - 2 * var(--gutter), var(--content-max));
+  margin-inline: auto;
+}
+
+.menu__header {
+  display: grid;
+  gap: var(--space-s);
+  margin-block-end: var(--space-2xl);
+  padding-block-end: var(--space-l);
+  border-block-end: 1px solid var(--color-line);
+}
+
+@media (min-width: 48rem) {
+  .menu__header {
+    grid-template-columns: 1fr auto;
+    align-items: end;
+  }
+}
+
+.menu__title {
+  font-size: var(--step-4);
+}
+
+.menu__lede {
+  max-width: 30ch;
+  color: var(--color-text-muted);
+}
+
+.menu__view {
+  min-height: 24rem;
+}
+
+/* --- Category contents: sticky bar on small screens --- */
+.menu-nav {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  gap: var(--space-m);
+  margin-inline: calc(-1 * var(--gutter));
+  margin-block-end: var(--space-l);
+  padding: var(--space-s) var(--gutter);
+  background: color-mix(in srgb, var(--color-bg) 92%, transparent);
+  border-block-end: 1px solid var(--color-line);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.menu-nav__back {
+  flex: none;
+  padding-inline-end: var(--space-m);
+  border-inline-end: 1px solid var(--color-line);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--color-text);
+  text-decoration: underline;
+  text-decoration-color: var(--color-line-strong);
+  white-space: nowrap;
+}
+
+.menu-nav__back:hover {
+  text-decoration-color: var(--color-accent);
+}
+
+.menu-nav__list {
+  flex: 1 1 auto;
+  display: flex;
+  gap: var(--space-l);
+  min-width: 0;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scrollbar-width: none;
+  padding-block: var(--space-2xs);
+}
+
+.menu-nav__list::-webkit-scrollbar {
+  display: none;
+}
+
+.menu-nav__list.is-overflowing {
+  padding-inline: 1.25rem;
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 1.25rem, #000 calc(100% - 1.25rem), transparent);
+  mask-image: linear-gradient(to right, transparent, #000 1.25rem, #000 calc(100% - 1.25rem), transparent);
+}
+
+.menu-nav__link {
+  position: relative;
+  display: block;
+  font-family: var(--font-display);
+  font-size: var(--step-1);
+  color: var(--color-text-muted);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color var(--duration-fast) ease;
+}
+
+.menu-nav__link:hover {
+  color: var(--color-text);
+}
+
+.menu-nav__link[aria-current="page"] {
+  font-style: italic;
+  color: var(--color-accent);
+}
+
+/* --- Wide screens: a contents column beside the dishes --- */
+@media (min-width: 64rem) {
+  .menu[data-view="category"] {
+    padding-block-start: var(--space-2xl);
+  }
+
+  .menu[data-view="category"] .menu__body {
+    display: grid;
+    grid-template-columns: 14rem minmax(0, 1fr);
+    gap: var(--space-2xl);
+    align-items: start;
+  }
+
+  .menu-nav {
+    top: var(--space-l);
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--space-l);
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: 0;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+
+  .menu-nav__back {
+    align-self: start;
+    padding: 0;
+    border: 0;
+  }
+
+  .menu-nav__list {
+    flex-direction: column;
+    gap: 0;
+    overflow: visible;
+    padding: 0;
+    border-block-start: 1px solid var(--color-line);
+  }
+
+  .menu-nav__link {
+    padding: var(--space-s) 0 var(--space-s) 1.75rem;
+    border-block-end: 1px solid var(--color-line);
+    white-space: normal;
+  }
+
+  /* A short Bordeaux rule marks where you are */
+  .menu-nav__link[aria-current="page"]::before {
+    content: "";
+    position: absolute;
+    inset-inline-start: 0;
+    top: 50%;
+    width: 1.1rem;
+    border-block-start: 1px solid currentColor;
+  }
+}

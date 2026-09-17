@@ -1,0 +1,71 @@
+/* Loading skeletons, empty and error states */
+.skeleton {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  background: var(--color-skeleton);
+  border-radius: var(--radius-s);
+}
+
+.skeleton::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(100deg, transparent 20%, var(--color-skeleton-shine) 50%, transparent 80%);
+  transform: translateX(-100%);
+  animation: shimmer 1.6s ease-in-out infinite;
+}
+
+.skeleton--line {
+  height: 1.1rem;
+  margin-block: 0.3rem;
+}
+
+.skeleton--thin {
+  height: 0.75rem;
+}
+
+@keyframes shimmer {
+  to { transform: translateX(100%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skeleton::after {
+    display: none;
+  }
+}
+
+.state {
+  display: grid;
+  justify-items: center;
+  gap: var(--space-s);
+  max-width: 34rem;
+  margin: var(--space-2xl) auto;
+  padding: var(--space-xl) var(--space-l);
+  text-align: center;
+}
+
+/* The logo's centre: a ring with a dot */
+.state::before {
+  content: "";
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-block-end: var(--space-xs);
+  border: 1px solid var(--color-line-strong);
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--color-accent) 0 3px, transparent 3.5px);
+}
+
+.state__title {
+  font-size: var(--step-3);
+  font-style: italic;
+}
+
+.state__message {
+  max-width: 42ch;
+  color: var(--color-text-muted);
+}
+
+.state .button {
+  margin-block-start: var(--space-s);
+}

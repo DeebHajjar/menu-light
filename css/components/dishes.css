@@ -1,0 +1,198 @@
+/* Category page: heading, then dishes as small framed pictures with captions */
+.course__header {
+  margin-block-end: var(--space-xl);
+  padding-block-end: var(--space-l);
+  border-block-end: 1px solid var(--color-line);
+}
+
+.course__title {
+  font-size: var(--step-4);
+  font-style: italic;
+}
+
+.course__title:focus {
+  outline: none;
+}
+
+.course__title:focus-visible {
+  text-decoration: underline 1px var(--color-accent);
+  text-underline-offset: 0.15em;
+}
+
+.course__description {
+  max-width: 52ch;
+  margin-block-start: var(--space-s);
+  color: var(--color-text-muted);
+}
+
+.dishes {
+  display: grid;
+  gap: var(--space-l);
+}
+
+.dish {
+  position: relative;
+  display: grid;
+  grid-template-columns: 6.5rem minmax(0, 1fr);
+  align-items: start;
+  gap: var(--space-m);
+}
+
+.dish__mat {
+  display: block;
+  padding: 6px;
+  background: var(--white);
+  box-shadow: var(--shadow-print);
+  transition: transform var(--duration-base) var(--ease-out), box-shadow var(--duration-base) ease;
+}
+
+.dish__media {
+  width: 100%;
+  aspect-ratio: 1;
+}
+
+@media (min-width: 48rem) {
+  .dishes {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-2xl) var(--space-l);
+  }
+
+  .dish {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .dish__mat {
+    padding: var(--mat);
+  }
+}
+
+@media (min-width: 80rem) {
+  .dishes {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.dish__body {
+  display: grid;
+  gap: var(--space-2xs);
+  min-width: 0;
+}
+
+.dish__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-m);
+}
+
+.dish__name {
+  min-width: 0;
+  font-size: var(--step-2);
+  line-height: 1.15;
+}
+
+.dish__trigger {
+  padding: 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  letter-spacing: inherit;
+  text-align: start;
+  transition: color var(--duration-fast) ease;
+}
+
+/* The button covers the whole card, so the picture opens the details too */
+.dish__trigger::after {
+  content: "";
+  position: absolute;
+  inset: calc(-1 * var(--space-xs));
+}
+
+.dish__trigger:focus-visible {
+  outline: none;
+}
+
+.dish__trigger:focus-visible::after {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+.dish:hover .dish__trigger {
+  color: var(--color-accent);
+}
+
+.dish:hover .dish__mat {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-print-raised);
+}
+
+.dish__price {
+  flex: none;
+  font-family: var(--font-display);
+  font-size: var(--step-2);
+  font-variant-numeric: lining-nums;
+  color: var(--color-accent);
+  white-space: nowrap;
+}
+
+.dish__ingredients {
+  font-size: 0.9375rem;
+  line-height: 1.55;
+  color: var(--color-text-muted);
+}
+
+.dish__tags {
+  margin-block-start: var(--space-xs);
+}
+
+.dish__status {
+  font-size: var(--step--1);
+  font-weight: 500;
+  color: var(--color-accent);
+}
+
+.dish--unavailable .dish__media {
+  filter: grayscale(1);
+  opacity: 0.55;
+}
+
+.dish--unavailable .dish__name,
+.dish--unavailable .dish__price,
+.dish--unavailable .dish__ingredients {
+  opacity: 0.55;
+}
+
+/* Tags */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2xs) var(--space-xs);
+}
+
+.tag {
+  padding: 0.05rem 0.5rem;
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-s);
+  background: var(--white);
+  font-size: 0.75rem;
+  letter-spacing: 0.02em;
+  line-height: 1.7;
+  color: var(--color-text-muted);
+}
+
+.tag--signature {
+  border-color: rgb(138 47 63 / 0.45);
+  color: var(--color-accent);
+}
+
+@media (max-width: 24rem) {
+  .dish {
+    grid-template-columns: 5.25rem minmax(0, 1fr);
+    gap: var(--space-s);
+  }
+
+  .dish__head {
+    flex-direction: column;
+    gap: 0;
+  }
+}
