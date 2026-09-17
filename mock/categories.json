@@ -4,7 +4,7 @@
     "slug": "sandwiches",
     "name": "Sandwiches",
     "description": "Freshly made sandwiches for a quick bite.",
-    "image": "assets/images/categories/sandwiches.svg",
+    "image": "assets/images/categories/sandwiches.png",
     "order": 1,
     "dish_count": 5
   },
